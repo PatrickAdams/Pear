@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E73F0227240998E500A4808F /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73F0226240998E500A4808F /* LaunchAtLogin.framework */; };
+		E73F0228240998E500A4808F /* LaunchAtLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E73F0226240998E500A4808F /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E75C49CE23F7200B00058625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C49CD23F7200B00058625 /* AppDelegate.swift */; };
 		E75C49D223F7200C00058625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75C49D123F7200C00058625 /* Assets.xcassets */; };
 		E75C49D523F7200C00058625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75C49D323F7200C00058625 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E73F0229240998E500A4808F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E73F0228240998E500A4808F /* LaunchAtLogin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E73F0226240998E500A4808F /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
 		E75C49CA23F7200B00058625 /* Hangout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75C49CD23F7200B00058625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E75C49D123F7200C00058625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73F0227240998E500A4808F /* LaunchAtLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E73F0225240998E400A4808F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E73F0226240998E500A4808F /* LaunchAtLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E75C49C123F7200A00058625 = {
 			isa = PBXGroup;
 			children = (
 				E75C49CC23F7200B00058625 /* Hangout */,
 				E75C49CB23F7200B00058625 /* Products */,
+				E73F0225240998E400A4808F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +97,8 @@
 				E75C49C623F7200B00058625 /* Sources */,
 				E75C49C723F7200B00058625 /* Frameworks */,
 				E75C49C823F7200B00058625 /* Resources */,
+				E73F0229240998E500A4808F /* Embed Frameworks */,
+				E73F02242409978F00A4808F /* Launch At Login */,
 			);
 			buildRules = (
 			);
@@ -124,6 +153,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E73F02242409978F00A4808F /* Launch At Login */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Launch At Login";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Carthage/Build/Mac/LaunchAtLogin.framework/Resources/copy-helper.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E75C49C623F7200B00058625 /* Sources */ = {
@@ -269,8 +319,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FYS5RKBMKU;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Hangout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,8 +345,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FYS5RKBMKU;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Hangout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

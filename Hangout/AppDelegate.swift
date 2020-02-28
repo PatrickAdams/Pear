@@ -1,4 +1,5 @@
 import Cocoa
+import LaunchAtLogin
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -12,6 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     ]
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        LaunchAtLogin.isEnabled = true
         statusBarItem.button?.image = NSImage(named: NSImage.Name("hangout"))
         constructMenu()
     }
