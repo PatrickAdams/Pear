@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		E73F0226240998E500A4808F /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
-		E75C49CA23F7200B00058625 /* Hangout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75C49CA23F7200B00058625 /* Pear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75C49CD23F7200B00058625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E75C49D123F7200C00058625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E75C49D423F7200C00058625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		E75C49CB23F7200B00058625 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E75C49CA23F7200B00058625 /* Hangout.app */,
+				E75C49CA23F7200B00058625 /* Pear.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,9 +90,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E75C49C923F7200B00058625 /* Hangout */ = {
+		E75C49C923F7200B00058625 /* Pear */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E75C49DA23F7200C00058625 /* Build configuration list for PBXNativeTarget "Hangout" */;
+			buildConfigurationList = E75C49DA23F7200C00058625 /* Build configuration list for PBXNativeTarget "Pear" */;
 			buildPhases = (
 				E75C49C623F7200B00058625 /* Sources */,
 				E75C49C723F7200B00058625 /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = Hangout;
+			name = Pear;
 			productName = Hangout;
-			productReference = E75C49CA23F7200B00058625 /* Hangout.app */;
+			productReference = E75C49CA23F7200B00058625 /* Pear.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E75C49C923F7200B00058625 /* Hangout */,
+				E75C49C923F7200B00058625 /* Pear */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E75C49DA23F7200C00058625 /* Build configuration list for PBXNativeTarget "Hangout" */ = {
+		E75C49DA23F7200C00058625 /* Build configuration list for PBXNativeTarget "Pear" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E75C49DB23F7200C00058625 /* Debug */,
