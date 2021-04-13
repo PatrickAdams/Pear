@@ -6,10 +6,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     let statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     var hangouts = [
-        (roomName: "Registry iOS Standup", roomId: "gbs-csej-mca"),
-        (roomName: "Hangout 1", roomId: "mjw-raqj-rfp"),
-        (roomName: "Hangout 2", roomId: "xpg-vvut-wzg"),
-        (roomName: "Hangout 3", roomId: "ory-ruoq-smt")
+        (roomName: "Registry iOS Standup", roomId: "anx-moby-pzs")
     ]
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
